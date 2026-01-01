@@ -25,9 +25,9 @@ class DonkeyUnityProcess:
 
         # On macOS, .app is a directory.
         if sim_path.endswith(".app"):
-        # Try to find the executable inside the bundle
-        app_name = os.path.splitext(os.path.basename(sim_path))[0]
-        mac_exe = os.path.join(sim_path, "Contents", "MacOS", app_name)
+            # Try to find the executable inside the bundle
+            app_name = os.path.splitext(os.path.basename(sim_path))[0]
+            mac_exe = os.path.join(sim_path, "Contents", "MacOS", app_name)
         if os.path.exists(mac_exe):
             sim_path = mac_exe
 
