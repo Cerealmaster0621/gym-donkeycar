@@ -16,7 +16,7 @@ with open("HISTORY.rst") as history_file:
     history = history_file.read()
 
 # gym 0.23 introduces breaking changes
-requirements = ["gym==0.22", "numpy", "pillow"]
+requirements = ["gymnasium", "numpy", "pillow"]
 
 
 setup(
@@ -66,7 +66,7 @@ setup(
     license="MIT license",
     long_description=readme + "\n\n" + history,
     include_package_data=True,
-    keywords="donkeycar, environment, agent, rl, openaigym, openai-gym, gym",
+    keywords="donkeycar, environment, agent, rl, gymnasium",
     packages=find_packages(),
     url="https://github.com/tawnkramer/gym-donkeycar",
     version=__version__,
